@@ -1,6 +1,13 @@
-# fcc-product-landing
+<div class="project-show-wrapper">
 
-## Responsive Web Design Projects - Build a Product Landing Page
+<div>
+
+<div class="util-spacer">
+
+</div>
+
+Responsive Web Design Projects - Build a Product Landing Page {#responsive-web-design-projects---build-a-product-landing-page .text-center .challenge-title}
+-------------------------------------------------------------
 
 -   **Objective:** Build a [CodePen.io](https://codepen.io) app that is
     functionally similar to this:
@@ -61,3 +68,44 @@
 -   Remember to use the
     [Read-Search-Ask](https://forum.freecodecamp.org/t/how-to-get-help-when-you-are-stuck/19514)
     method if you get stuck.
+
+</div>
+
+<div>
+
+<div class="inline-form-field">
+
+<div class="col-sm-3 col-xs-12">
+
+Solution
+
+</div>
+
+<div class="col-sm-9 col-xs-12">
+
+</div>
+
+</div>
+
+</div>
+
+<div style="padding: 0px 15px;">
+
+I've completed this challenge (Ctrl + Enter)
+
+</div>
+
+<div class="tool-panel-group project-tool-panel">
+
+[Get a
+hint](https://guide.freecodecamp.org/certifications/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page){.btn-primary-invert
+.btn .btn-primary .btn-block}
+Ask for help
+
+</div>
+
+<div class="util-spacer">
+
+</div>
+
+</div>

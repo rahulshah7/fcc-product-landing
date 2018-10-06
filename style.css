@@ -2,10 +2,7 @@ html, body {
     margin: 0;
     width: 100%;
     height: 100%;
-}
-
-.main-header {
-    border: solid red 1px;
+    background-color: bisque;
 }
 
 .main-header__logo {
@@ -14,22 +11,6 @@ html, body {
 
 .main-header__logo  img{
     max-height: 64px;
-}
-
-#product {
-    border: solid red 1px;
-    height: 100px;
-    margin: 10px 0;
-}
-
-#pricing {
-    border: solid red 1px;
-    height: 100px;
-    margin: 10px 0;
-}
-
-#process {
-    width: 100%;
 }
 
 .process__video {
@@ -43,16 +24,4 @@ html, body {
     position: absolute;
     width: 100%;
     height: 100%;
-}
-
-#signup {
-    border: solid red 1px;
-    height: 100px;
-    margin: 10px 0;
-}
-
-.main__footer {
-    border: solid red 1px;
-    height: 100px;
-    margin: 10px 0;
 }

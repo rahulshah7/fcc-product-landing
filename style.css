@@ -31,9 +31,10 @@ body {
     max-height: 64px;
 }
 
-.main__intro-image {
-    background-image: url("images/Red_Cabbage_Love.jpg");
-    height: 300px;
+.main__intro-image img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 #pricing {

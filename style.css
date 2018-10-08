@@ -64,13 +64,19 @@ body {
 
 
 .main-footer__info {
-    background-color: var(--darken-1)
+    background-color: var(--darken-1);
 }
 
 .main-footer__copyright {
-    background-color: var(--darken-4)
+    background-color: var(--darken-4);
+    color: white;
+    text-align: center;
 }
 
 section > h1 {
     color: red;
+}
+
+.main-footer h1 {
+    color: blue;
 }

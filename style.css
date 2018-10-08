@@ -39,6 +39,14 @@ body {
 
 #pricing {
     background-image: url("images/red-cabbage-yellow-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10% 0;
+}
+
+.price-card {
+    background-color: rgba(255, 255, 124, 0.705);
 }
 
 .process__video {

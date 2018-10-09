@@ -11,61 +11,55 @@
 </head>
 
 <body>
-    <div class="container">
 
-        <header class="main-header" id="header">
+    <header class="main-header" id="header">
 
-            <div class="main-header__logo">
-                <img src="images/fv-logo.png" alt="F&V Co" id="header-img">
+        <div class="main-header__logo">
+            <img src="images/fv-logo.png" alt="F&V Co" id="header-img">
+        </div>
+
+        <nav class="main-header__nav" id="nav-bar">
+
+            <a href="#product" class="main-header__nav__link nav-link">Product</a>
+            <a href="#pricing" class="main-header__nav__link nav-link">Pricing</a>
+            <a href="#process" class="main-header__nav__link nav-link">Process</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="main__intro-image">
+
+            <img src="images/Red_Cabbage_Love.jpg" alt="Red cabbage leave with decorative cut outs.">
+
+        </section>
+
+        <section id="product">
+
+            <div class="container">
+                <h1>Our latest innovation...</h1>
+                    <p>The red cabbage, also known as purple cabbage, red kraut, or blue kraut after preparation.
+                        Its leaves are coloured dark red/purple. However, the plant changes its colour according to
+                        the pH value of the soil, due to a pigment belonging to anthocyanins. In acidic soils, the
+                        leaves grow more reddish, in neutral soils they will grow more purple, while an alkaline
+                        soil will produce rather greenish-yellow coloured cabbages. This explains the fact that the
+                        same plant is known by different colours in various regions.</p>
             </div>
 
-            <nav class="main-header__nav" id="nav-bar">
+        </section>
 
-                <a href="#product" class="main-header__nav__link nav-link">Product</a>
-                <a href="#pricing" class="main-header__nav__link nav-link">Pricing</a>
-                <a href="#process" class="main-header__nav__link nav-link">Process</a>
+        <section id="pricing">
 
-            </nav>
+            <div class="container">
+                
+                <h1 class="section-title">Pricing</h1>
 
-        </header>
-
-        <main>
-
-            <section class="main__intro-image">
-
-                <img src="images/Red_Cabbage_Love.jpg" alt="Red cabbage leave with decorative cut outs.">
-
-            </section>
-
-            <section id="product">
-                <div class="container">
-
-                    <h1>Our latest innovation...</h1>
-
-                    <div class="flex-container">
-                        <p>The red cabbage, also known as purple cabbage, red kraut, or blue kraut after preparation.
-                            Its leaves are coloured dark red/purple. However, the plant changes its colour according to
-                            the pH value of the soil, due to a pigment belonging to anthocyanins. In acidic soils, the
-                            leaves grow more reddish, in neutral soils they will grow more purple, while an alkaline
-                            soil will produce rather greenish-yellow coloured cabbages. This explains the fact that the
-                            same plant is known by different colours in various regions.</p>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-            <section id="pricing">
-
-                <div class="container">
-
-                    <h1 class="section-title">Pricing</h1>
-
-                    <div class="price-cards">
-
+                <div class="container-flex">
+    
                         <article class="price-card">
-
+    
                             <h1 class="price-card__title">Raw</h1>
                             <h2 class="price-card__price">£0.99</h2>
                             <ul class="price-card__features">
@@ -73,13 +67,13 @@
                                 <li class="price-card__feature">As intended by nature</li>
                                 <li class="price-card__feature">Crunchy and juicy</li>
                             </ul>
-
+    
                             <button class="price-card__button">Buy</button>
-
+    
                         </article>
-
+    
                         <article class="price-card">
-
+    
                             <h1 class="price-card__title">Curried</h1>
                             <h2 class="price-card__price">£1.99</h2>
                             <ul class="price-card__features">
@@ -87,13 +81,13 @@
                                 <li class="price-card__feature">Comes with rice</li>
                                 <li class="price-card__feature">Spicey and tasty</li>
                             </ul>
-
+    
                             <button class="price-card__button">Buy</button>
-
+    
                         </article>
-
+    
                         <article class="price-card">
-
+    
                             <h1 class="price-card__title">Braised</h1>
                             <h2 class="price-card__price">£2.99</h2>
                             <ul class="price-card__features">
@@ -101,40 +95,28 @@
                                 <li class="price-card__feature">Soft and tender</li>
                                 <li class="price-card__feature">Bursting with flavour</li>
                             </ul>
-
+    
                             <button class="price-card__button">Buy</button>
-
+    
                         </article>
 
-                    </div>
                 </div>
 
-            </section>
+            </div>
 
-            <section id="process">
+        </section>
 
-                <div class="container">
-                    <h1>Process</h1>
-                    <p>See how our most popular red cabbage preparation is produced.</p>
-                </div>
+        <section id="process">
 
-                <div class="process__video">
-                    <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/WL6_fGKbY_8?rel=0&amp;showinfo=0"
-                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
+            
+            <div class="container">
+                    
+                <h1>Process</h1>
 
-            </section>
+                <div class="process__learn-more">
 
-        </main>
-
-        <footer class="main-footer">
-
-            <section class="main-footer__info">
-
-                <div class="main-footer__signup">
-
-                    <h1>Sign Up</h1>
-                    <p>Be the first to know about our future product launches.</p>
+                    <p>Learn more about how our streamlined production process operates and be
+                        the first to know about exciting promotions and product launches.</p>
 
                     <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
 
@@ -145,37 +127,49 @@
                         </fieldset>
 
                     </form>
-
                 </div>
 
-                <div class="main-footer__bio">
-                    <h1>Company Bio</h1>
-                    <p>F&V Co is a fictional yet innovative startup experiencing tremendous growth and is set to
-                        disrupt
-                        the fruit and veg industry.</p>
+                <div class="process__video">
+                    <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/WL6_fGKbY_8?rel=0&amp;showinfo=0"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
+            </div>
 
-                <nav class="main-footer__links">
-                    <ul class="main-footer__list-items">
+        </section>
 
-                        <li class="main-footer__list-item"><a href="">Contact Us</a></li>
-                        <li class="main-footer__list-item"><a href="">Trademarks</a></li>
-                        <li class="main-footer__list-item"><a href="">Privacy</a></li>
+    </main>
 
-                    </ul>
-                </nav>
+    <footer class="main-footer">
 
-            </section>
+        <section class="main-footer__info">
 
-            <section class="main-footer__copyright">
-                <p>© 2018 F&V Co</p>
-            </section>
+            <div class="main-footer__bio">
+                <h1>Company Bio</h1>
+                <p>F&V Co is a fictional yet innovative startup experiencing tremendous growth and is set to
+                    disrupt
+                    the fruit and veg industry.</p>
+            </div>
 
-        </footer>
+            <nav class="main-footer__links">
+                <ul class="main-footer__list-items">
 
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+                    <li class="main-footer__list-item"><a href="">Contact Us</a></li>
+                    <li class="main-footer__list-item"><a href="">Trademarks</a></li>
+                    <li class="main-footer__list-item"><a href="">Privacy</a></li>
 
-    </div>
+                </ul>
+            </nav>
+
+        </section>
+
+        <section class="main-footer__copyright">
+            <p>© 2018 F&V Co</p>
+        </section>
+
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </body>
 
 </html>

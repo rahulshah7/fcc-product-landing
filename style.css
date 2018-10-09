@@ -33,10 +33,10 @@ body * {
     top: 0;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    flex-wrap: wrap;
     padding-bottom: 10px;
     border-bottom: solid 1px var(--darken-3);
 }
@@ -69,12 +69,20 @@ body * {
     display: block;
 }
 
-#product>.flex-container {
-    display: flex;
-    flex-wrap: wrap;
+.container {
+    width: 70%;
+    margin: 0 auto;
 }
 
-#product .flex-container>p {
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+#product p {
     background-color: var(--lighten-5);
     line-height: 1.5rem;
 }
@@ -89,6 +97,7 @@ body * {
 
 .price-card {
     background-color: rgba(255, 255, 124, 0.705);
+    text-align: center;
 }
 
 .process__video {
@@ -115,7 +124,7 @@ body * {
     text-align: center;
 }
 
-section>h1 {
+section h1 {
     color: red;
 }
 

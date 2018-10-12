@@ -79,8 +79,8 @@ body * {
     bottom: calc(110px + 1rem);
 }
 
-.image-1 > img,
-.image-2 > img {
+.image-1>img,
+.image-2>img {
     width: 100%;
     height: auto;
     display: block;
@@ -95,20 +95,12 @@ section[class^="main__"] {
     margin: 0 auto;
 }
 
-.container-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-}
-
-.container > h1 {
+.container>h1 {
     color: var(--darken-4);
     margin: 1rem 0;
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -116,9 +108,71 @@ section[class^="main__"] {
     line-height: 1.5rem;
 }
 
+.main__pricing__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
 .price-card {
-    background-color: rgba(255, 255, 124, 0.705);
+    background-color: var(--lighten-5);
     text-align: center;
+    border: 1px solid var(--normal);
+    margin: 1.5rem;
+}
+
+.price-card h1 {
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    background-color: var(--darken-3);
+    color: var(--lighten-4);
+
+}
+
+.price-card h2 {
+    font-size: 2rem;
+    padding: 0.5rem;
+    text-decoration: underline;
+}
+
+.price-card li {
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 0.33rem 0.8rem;
+    margin: 0.75rem;
+    text-decoration: none;
+    background: var(--darken-3);
+    border: var(--darken-3) 2px solid;
+    color: var(--lighten-5);
+    font-family: 'Andika', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out,
+        transform 150ms ease;
+    border-radius: 0.3rem;
+}
+
+button:hover,
+button:focus {
+    background: var(--lighten-5);
+    color: var(--darken-3);
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
 }
 
 .process__video {
@@ -140,15 +194,23 @@ section[class^="main__"] {
 
 .main-footer__copyright {
     background-color: var(--darken-4);
-    color: white;
+    color: var(--lighten-3);
     text-align: center;
 }
 
-.main-footer__bio h1 {
-    color: blue;
+.main-footer__bio {
+    color: var(--lighten-4);
+    padding: 1rem 0;
 }
 
+.main-footer__bio h1 {
+    margin: 0.5rem 0;
+    color: var(--lighten-5);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
 
+.price-card,
 .image-1,
 .image-2,
 .process__video {
@@ -160,7 +222,7 @@ section[class^="main__"] {
     .main-header__nav {
         margin: 0;
     }
-    
+
     #main-container {
         padding-top: 68px;
     }

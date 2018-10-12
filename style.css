@@ -44,6 +44,7 @@ body * {
     align-content: space-around;
     border-bottom: solid 1px var(--lighten-3);
     box-shadow: 0px 2px 5px 0px rgba(179, 183, 174, 0.5);
+    z-index: 2;
 }
 
 .main-header__logo {
@@ -215,6 +216,10 @@ button:active {
 .image-2,
 .process__video {
     box-shadow: 0px 0px 7px 1px rgba(51, 56, 42, 0.47);
+}
+
+iframe {
+    z-index: 1;
 }
 
 @media (min-width: 388px) {

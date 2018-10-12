@@ -21,7 +21,7 @@ body {
     background-color: var(--lighten-5);
 }
 
-body {
+#main-container {
     padding-top: 110px;
 }
 
@@ -66,15 +66,19 @@ body * {
     background-color: var(--lighten-4);
 }
 
+.nav-target {
+    position: relative;
+    bottom: calc(110px + 1rem);
+}
+
 .main__intro-image img {
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: -110px;
 }
 
 .container {
-    width: 70%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -86,16 +90,17 @@ body * {
     align-content: center;
 }
 
-#product {
-    padding-top: 110px;
+section h1 {
+    color: red;
+    margin: 1rem 0;
 }
 
-#product p {
+.main__product p {
     background-color: var(--lighten-5);
     line-height: 1.5rem;
 }
 
-#pricing {
+.main__pricing {
     background-image: url("images/red-cabbage-yellow-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -132,29 +137,28 @@ body * {
     text-align: center;
 }
 
-section h1 {
-    color: red;
-}
-
 .main-footer h1 {
     color: blue;
 }
 
 @media (min-width: 350px) {
-    body {
-        padding-top: 70px;
-    }
 
     .main-header__nav {
-        margin: 16px;
+        margin: 0;
     }
-
-    .main__intro-image img {
-        margin-bottom: -70px;
-    }
-
-    #product {
+    
+    #main-container {
         padding-top: 70px;
+    }
+
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .nav-target {
+        position: relative;
+        bottom: calc(70px + 1rem);
     }
 
 }

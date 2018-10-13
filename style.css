@@ -66,6 +66,7 @@ body * {
     padding: 0.5rem;
     border-radius: 0.5rem;
     color: var(--darken-4);
+    transition: background 250ms ease-in-out;
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
     text-decoration: none;
@@ -146,7 +147,8 @@ section[class^="main__"] {
     padding: 0 1rem;
 }
 
-button {
+button,
+#submit {
     display: inline-block;
     padding: 0.33rem 0.8rem;
     margin: 0.75rem;
@@ -163,7 +165,9 @@ button {
 }
 
 button:hover,
-button:focus {
+button:focus,
+#submit:hover,
+#submit:focus {
     color: var(--lighten-5);
     background: var(--darken-3);
     outline: none;
@@ -188,7 +192,7 @@ button:focus {
     flex-wrap: wrap;
     padding: 1rem;
     background: var(--lighten-5);
-    border: 3px dotted var(--darken-3);
+    border: 2px dotted var(--darken-3);
 }
 
 .main__process__flex>p,
@@ -228,18 +232,29 @@ button:focus {
 }
 
 .main-footer__info {
-    background-color: var(--darken-1);
+    background-color: var(--darken-3);
+}
+
+.main-footer__info__flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main-footer__info__flex>* {
+    flex: 1;
+    padding: 1rem;
 }
 
 .main-footer__copyright {
     background-color: var(--darken-4);
     color: var(--lighten-3);
+    padding: 1rem;
     text-align: center;
 }
 
 .main-footer__bio {
     color: var(--lighten-4);
-    padding: 1rem 0;
 }
 
 .main-footer__bio h1 {
@@ -247,6 +262,27 @@ button:focus {
     color: var(--lighten-5);
     font-weight: 700;
     font-size: 1.2rem;
+}
+
+.main-footer__list-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main-footer__list-item {
+    line-height: 2rem;
+}
+
+.main-footer__list-item a {
+    margin: 0.5rem;
+    color: var(--lighten-4);
+    text-decoration: none;
+}
+
+.main-footer__list-item a:hover,
+.main-footer__list-item a:focus {
+    color: var(--lighten-5);
 }
 
 .price-card,
@@ -281,6 +317,11 @@ button:focus {
 @media (min-width: 750px) {
     .container {
         width: 85%;
+    }
+
+    .main-footer__list-items {
+        flex-direction: row;
+        justify-content: flex-end;
     }
 }
 

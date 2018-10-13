@@ -67,11 +67,13 @@ body * {
     border-radius: 0.5rem;
     color: var(--darken-4);
     font-size: 1.1rem;
+    letter-spacing: 0.1rem;
     text-decoration: none;
 }
 
-.main-header__nav__link:hover {
-    color: white;
+.main-header__nav__link:hover,
+.main-header__nav__link:focus {
+    color: var(--lighten-5);
     background-color: var(--darken-3);
 }
 
@@ -102,6 +104,7 @@ section[class^="main__"] {
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
     font-size: 3rem;
+    letter-spacing: 0.2rem;
     text-align: center;
 }
 
@@ -156,8 +159,7 @@ button {
     font-size: 1.2rem;
     cursor: pointer;
     text-align: center;
-    transition: background 250ms ease-in-out,
-        transform 150ms ease;
+    transition: background 250ms ease-in-out;
     border-radius: 0.3rem;
 }
 
@@ -166,10 +168,6 @@ button:focus {
     color: var(--lighten-5);
     background: var(--darken-3);
     outline: none;
-}
-
-button:active {
-    transform: scale(0.99);
 }
 
 .process__video {
@@ -218,7 +216,7 @@ iframe {
     z-index: 1;
 }
 
-@media (min-width: 388px) {
+@media (min-width: 422px) {
 
     .main-header__nav {
         margin: 0;

@@ -148,11 +148,11 @@ section[class^="main__"] {
 
 button {
     display: inline-block;
-    border: none;
     padding: 0.33rem 0.8rem;
     margin: 0.75rem;
     text-decoration: none;
     background: transparent;
+    border-radius: 0.3rem;
     border: var(--darken-3) 2px solid;
     color: var(--darken-3);
     font-family: 'Andika', sans-serif;
@@ -160,7 +160,6 @@ button {
     cursor: pointer;
     text-align: center;
     transition: background 250ms ease-in-out;
-    border-radius: 0.3rem;
 }
 
 button:hover,
@@ -182,6 +181,50 @@ button:focus {
     width: 100%;
     height: 100%;
 }
+
+.main__process__flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background: var(--lighten-5);
+    border: 3px dotted var(--darken-3);
+}
+
+.main__process__flex>p,
+.main__process__flex>form {
+    flex: 1;
+    margin: 1rem;
+}
+
+.main__process__flex>p {
+    padding: 2rem;
+    line-height: 1.2rem;
+    background: white;
+    border-radius: 2rem;
+}
+
+.main__process__flex>form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main__process__flex>form label {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.main__process__flex>form input {
+    font-family : inherit;
+    font-size   : 100%;
+    border-radius: 0.3rem;
+    border: 1px solid var(--normal);
+    padding: 0.3rem;
+    outline: none;
+    text-align: center;
+  }
 
 .main-footer__info {
     background-color: var(--darken-1);
@@ -208,7 +251,9 @@ button:focus {
 .price-card,
 .image-1,
 .image-2,
-.process__video {
+.process__video,
+.main__process__flex
+ {
     box-shadow: 0px 0px 7px 1px rgba(51, 56, 42, 0.47);
 }
 

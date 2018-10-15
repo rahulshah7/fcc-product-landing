@@ -62,7 +62,7 @@ body * {
 }
 
 .main-header__nav__link {
-    margin: 0.5rem;
+    margin: 0.1rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
     color: var(--darken-4);
@@ -297,6 +297,10 @@ button:focus,
 
     .main-header__nav {
         margin: 0;
+    }
+
+    .main-header__nav__link {
+        margin: 0.5rem;
     }
 
     #main-container {

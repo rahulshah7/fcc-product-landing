@@ -33,7 +33,7 @@ body * {
 }
 
 .main-header {
-    background-color: var(--lighten-5);
+    background-color: var(--lighten-1);
     position: fixed;
     top: 0;
     width: 100%;
@@ -42,8 +42,7 @@ body * {
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
-    border-bottom: solid 1px var(--lighten-3);
-    box-shadow: 0px 2px 5px 0px rgba(179, 183, 174, 0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
     z-index: 2;
 }
 

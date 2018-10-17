@@ -47,7 +47,7 @@ body * {
 }
 
 .main-header__logo {
-    margin: 8px 16px;
+    padding: 8px 0;
 }
 
 .main-header__logo img {
@@ -292,16 +292,12 @@ button:focus,
     box-shadow: 0px 0px 7px 1px rgba(51, 56, 42, 0.47);
 }
 
-@media (min-width: 422px) {
+@media (min-width: 350px) {
 
     .main-header__nav {
-        margin: 0;
+        margin: 8px 0 8px 0;
     }
-
-    .main-header__nav__link {
-        margin: 0.5rem;
-    }
-
+    
     #main-container {
         padding-top: 68px;
     }

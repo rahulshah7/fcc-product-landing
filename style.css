@@ -29,7 +29,8 @@ body {
 }
 
 body * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .main-header {
@@ -37,12 +38,20 @@ body * {
     position: fixed;
     top: 0;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-around;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
     z-index: 2;
 }
 
@@ -65,6 +74,8 @@ body * {
     padding: 0.5rem;
     border-radius: 0.5rem;
     color: var(--darken-4);
+    -webkit-transition: background 250ms ease-in-out;
+    -o-transition: background 250ms ease-in-out;
     transition: background 250ms ease-in-out;
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
@@ -113,10 +124,16 @@ section[class^="main__"] {
 }
 
 .main__pricing__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-line-pack: space-evenly;
+        align-content: space-evenly;
 }
 
 .price-card {
@@ -160,6 +177,8 @@ button,
     font-size: 1.2rem;
     cursor: pointer;
     text-align: center;
+    -webkit-transition: background 250ms ease-in-out;
+    -o-transition: background 250ms ease-in-out;
     transition: background 250ms ease-in-out;
 }
 
@@ -187,8 +206,11 @@ button:focus,
 }
 
 .main__process__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 1rem;
     background: var(--lighten-5);
     border: 2px dotted var(--darken-3);
@@ -196,7 +218,9 @@ button:focus,
 
 .main__process__flex>p,
 .main__process__flex>form {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     margin: 1rem;
 }
 
@@ -208,10 +232,17 @@ button:focus,
 }
 
 .main__process__flex>form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 }
 
@@ -235,13 +266,20 @@ button:focus,
 }
 
 .main-footer__info__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .main-footer__info__flex>* {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     padding: 1rem;
 }
 
@@ -264,9 +302,16 @@ button:focus,
 }
 
 .main-footer__list-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .main-footer__list-item {
@@ -289,7 +334,8 @@ button:focus,
 .image-2,
 .process__video,
 .main__process__flex {
-    box-shadow: 0px 0px 7px 1px rgba(51, 56, 42, 0.47);
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(51, 56, 42, 0.47);
+            box-shadow: 0px 0px 7px 1px rgba(51, 56, 42, 0.47);
 }
 
 @media (min-width: 350px) {
@@ -319,8 +365,13 @@ button:focus,
     }
 
     .main-footer__list-items {
-        flex-direction: row;
-        justify-content: flex-end;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
     }
 }
 
